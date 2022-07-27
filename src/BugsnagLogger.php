@@ -65,6 +65,7 @@ class BugsnagLogger extends AbstractLogger
      */
     public function log($level, string|\Stringable $message, array $context = []): void
     {
+        
         $title = 'Log '.$level;
         if (isset($context['title'])) {
             $title = $context['title'];
